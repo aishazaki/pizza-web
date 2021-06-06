@@ -1,0 +1,390 @@
+@font-face {
+    font-family: "BEIN-Ar";
+    src: url(../fonts/BEIN-AR-NORMAL.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/RALEWAY-MEDIUM.ttf);
+}
+@font-face {
+    font-family: "AlQabas Bold";
+    src: url(../fonts/19304-ALQABAS-BOLD.ttf);
+    font-weight: bold;
+}
+body {
+    font-family: "BEIN-Ar", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.429;
+}
+.nav-background {
+    background-color: #505050;
+    width: 100%;
+    
+}
+.index-transparent{
+    background-color: transparent;
+}
+.custom-nav .container{
+    margin: 0;
+    padding: 0;
+}
+.custom-nav a.navbar-brand{
+    font-size: 45px;
+    color: #fff;
+    font-family: "AlQabas Bold";
+    margin: 20px 115px 0px 60px;
+}
+
+.custom-nav .navbar-nav li a.nav-link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.custom-nav .navbar-nav li a.nav-link:hover {
+    background-color: #414040;
+    border-radius: 3px;
+}
+
+.custom-nav .navbar-nav li.active a.nav-link {
+    background-color: #fc726c;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.custom-nav .navbar-nav .btn-icon {
+    border: 1px solid #8a8888;
+    padding: 8px 10px; 
+}
+.custom-nav a.navbar-toggler{
+    color: #fff;
+    position: absolute;
+    left: 85px;
+    top: 41px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.custom-nav a.navbar-toggler:hover, .custom-nav a.navbar-toggler:focus
+.custom-nav button.navbar-toggler:hover, .custom-nav button.navbar-toggler:active, .custom-nav button.navbar-toggler1:focus{
+    color:#fc726c
+}
+.custom-nav button.navbar-toggler{
+    border: 1px solid;
+    color: #fff;
+}
+.nav-item.dropdown .dropdown-menu {
+    left: auto;
+    background-color: #505050;   
+}
+.nav-item.dropdown a.dropdown-item{
+    color: #fff;
+    font-weight: 700;
+}
+.nav-item.dropdown a.dropdown-item:hover, .nav-item.dropdown a.dropdown-item:focus {
+    background-color: #dc7f88;
+}
+/* قسم صور البيتزا  */
+
+#carousel-best-selling .carousel-item:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+#carousel-best-selling .carousel-indicators .fa-pizza-slice{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    font-size: 60px;
+    color: #fff;
+}
+#carousel-best-selling .carousel-indicators .fa-pizza-slice:hover, #carousel-best-selling .carousel-indicators .fa-pizza-slice:focus{
+    color: #cfcbd7;
+}
+#carousel-best-selling .carousel-indicators .active{
+    color: #ff736c;
+}
+/* قسم المنتجات */
+.products-carousel{
+    background-color: #dedede;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.products-carousel  h4.title{
+    color: #fc726c;
+    font-size: 45px;
+}
+.products-carousel p.title-underline{
+    font-size: 20px;
+    color: #000;
+    line-height: 15px;
+    margin-bottom: 50px;
+}
+.product-card{
+    margin-bottom: 80px;
+}
+.product-card img{
+    height: 220px;
+}
+.product-card .card-body{
+    padding: 30px 20px 0px!important;
+    height: 290px;
+    box-shadow: 0 8px 6px -6px #787878;/* one side only */
+    position: relative;
+
+}
+.product-card  .card-title{
+    font-size: 25px;
+    color: #232b38;
+    margin-bottom: 20px;
+}
+.product-card .card-text{
+    color: #707070;
+    padding-right: 20px;
+}
+.product-card a{
+    margin-top: 15px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 60%;
+    padding: 6px !important;
+}
+
+.products-carousel button.myBtn{
+    padding: 15px 17px 11px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #ff736c;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    border-radius: 15px;
+    border: transparent;
+    border-bottom: 4px solid #d9625c;
+    margin-bottom: 80px;
+}
+.products-carousel button.myBtn:hover{
+    background-color: #d9625c;
+}
+.products-carousel .seeMore-btn{
+    margin-bottom: 40px;
+}
+/* قسم العروض المميزة */
+.special-offers{
+    background-color: #f0f0f0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.special-offers h4.title{
+    color: #232b38;
+    font-size: 45px;
+}
+.special-offers p.title-underline{
+    font-size: 20px;
+    color: #eebf00;
+    line-height: 10px;
+    margin-bottom: 20px;
+}
+.special-offers .offer-card:not(.mid-card){
+    margin-top: 30px;
+}
+.special-offers .card-title{
+    text-align: center;
+    color: #232b38;
+    font-size: 35px;
+}
+.special-offers .card-body{
+    box-shadow: 0 8px 6px -6px #787878;
+}
+.rating {
+    color: #c2c2c2;
+}
+.rating .active {
+    color: #ffce09;
+}
+.price {
+    direction: ltr;
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgb( 252, 61, 61 );
+    line-height: 1.313;
+}
+button.add-to-cart-btn{
+    background-color: #fff;
+    border: 2px solid #eebf00;
+    color: #6c6c6c;
+    font-family: "BEIN-Ar", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    box-shadow: none;
+}
+button.add-to-cart-btn:hover{
+    border-color: #eeb007;
+    background-color: #eeb007;
+    color: #fff;
+}
+button.add-to-cart-btn .cart{
+    background-color: #eebf00;
+    color: #fff;
+    padding:8px;
+}
+button.add-to-cart-btn p{
+    padding: 8px 20px;
+    margin-bottom: 0;
+}
+/* تذييل  الصفحة */
+#footer{
+    padding-top: 60px;
+    background-color: #414040;
+    color: #fff;
+}
+#footer #restaurant-logo a{
+    font-family:  "AlQabas Bold";
+    font-size: 60px;
+    color: #fff;
+}
+#footer #restaurant-logo a:hover{
+    text-decoration: none;
+}
+#footer h3{
+    color:#fff;
+    border-bottom: 1px solid #eebf00;
+    padding-bottom: 20px;
+}
+#footer #about-us p{
+ padding-top: 20px;
+ padding-bottom: 30px;
+}
+#footer #about-us button{
+    padding: 20px 25px 18px;
+    color: #fff;
+    font-size: 17px;
+    
+    background-color: #232b38;
+    border-radius: 15px;
+}
+#footer #about-us button:hover, #footer #about-us button:focus, #footer #about-us button:active{
+    background-color: #985154 ;
+}
+#footer-social ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer-social ul li {
+    margin-top: 20px;
+    text-align: left;
+}
+#footer-social a.social-link, #footer-links a{
+    color: #fff;
+}
+#footer-social a#facebook:hover, #footer-social a#facebook:focus{
+    color: #395491;
+    text-decoration: none;
+}
+#footer-social a#twitter:hover, #footer-social a#twitter:focus{
+    color: #17a8f7;
+    text-decoration: none;
+}
+#footer-social a#google:hover, #footer-social a#google:focus{
+    color: #f54e7e;
+    text-decoration: none;
+}
+#footer-social a#instagram:hover, #footer-social a#instagram:focus{
+    color: #ba3f86;
+    text-decoration: none;
+}
+#footer-links a{
+    display: block;
+    margin-top: 20px;
+}
+#footer-links a:focus, #footer-links a:hover, #footer-links a:active{
+    text-decoration: none;
+    font-weight: bold;
+}
+#copyright{
+    margin-top: 120px;
+    background-color: #232b38;
+    color: #fff;
+    line-height: 15px;
+    padding: 15px;
+}
+#copyright span:not(#copyright-year){
+    color: #f06e69;
+}
+/*التجاوب مع مختلف الشاشات*/
+@media (max-width: 1189px) {
+    .custom-nav .navbar-nav li a.nav-link {
+        padding: 6px;
+        margin-left: 15px;
+    }
+}
+@media (max-width: 991px) {
+    .custom-nav a.navbar-brand{
+        margin-top: 0px;
+    }
+    .custom-nav ul.navbar-nav{
+        margin-top: 8px;
+        border-top: 1px solid #fff;
+        background-color: #505050;
+    }
+    .custom-nav .navbar-nav li a.nav-link {
+        margin-top: 35px;
+    }
+    .nav-item.dropdown .dropdown-menu {
+        border: 0px;
+    }
+    #footer #restaurant-logo a{
+        font-size: 45px;
+    }
+    #carousel-best-selling .carousel-indicators .fa-pizza-slice{
+        font-size: 40px;
+    }
+    .special-offers .card-title{
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .custom-nav a.navbar-brand{
+        margin-right: 60px;
+    }
+    .product-card img{
+        height: 100%;
+    }
+    .product-card .card-body{
+        height: 250px;
+    }
+    .special-offers .card-title{
+        font-size: 30px;
+    }
+    .special-offers .mid-card{
+        margin-top: 30px;
+    }
+    #footer div.footer{
+        margin-top: 50px !important;
+    }
+}
+@media (max-width: 576px) {
+    .custom-nav a.navbar-brand{
+        margin-right: 0px;
+        font-size: 18px
+    }
+    .custom-nav a.navbar-brand img{
+        width: 55px;
+    }
+    .custom-nav a.shopping-cart{
+        margin: 35px 15px 10px;
+    }
+    #carousel-best-selling .carousel-indicators .fa-pizza-slice{
+        margin-bottom: 20px;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+}

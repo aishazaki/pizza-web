@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع لمطعم بيع بيتزا">
+    <title>مطعم بيتزا</title>
+    <script type="text/html" src="{require('./index.js')}"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- قائمة التنقل -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg fixed-top custom-nav index-navbar nav-background">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        ماي بيتزا
+                        <img src="./image/logo.png" alt="شعار الموقع">
+                    </a>
+                    <a href="#" class="navbar-toggler  btn btn-icon d-none d-sm-block d-lg-none">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <button class="navbar-toggler btn btn-icon collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="" class="nav-link">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">قائمة الطعام</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a href="" class="dropdown-item">الاطباق الرئيسية</a>
+                                    <a href="" class="dropdown-item">الاطباق الجانبية</a>
+                                    <a href="" class="dropdown-item">المشروبات</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">التوصيل</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about-us.html" class="nav-link">عن المطعم</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">اتصل بنا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="shopping-cart d-block d-sm-none d-lg-block nav-link btn btn-icon ">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- قسم صور البيتزا -->
+        <div class="row">
+            <div class="carousel slide" id="carousel-best-selling" data-ride="carousel">
+                <!-- ازرار التنقل -->
+
+                <div class="carousel-indicators">
+                    <i class="fas fa-pizza-slice active" data-target="#carousel-best-selling" data-slide-to="0" ></i>
+                    <i class="fas fa-pizza-slice" data-target="#carousel-best-selling" data-slide-to="1" ></i>
+                    <i class="fas fa-pizza-slice" data-target="#carousel-best-selling" data-slide-to="2" ></i>
+                    <i class="fas fa-pizza-slice" data-target="#carousel-best-selling" data-slide-to="3" ></i>
+                </div>
+                <!-- معرض الصور -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/2.jpg" alt="pizza" class="d-block w-100">   
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/1.jpg" alt="pizza" class="d-block w-100">   
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/3.jpg" alt="pizza" class="d-block w-100">   
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/4.jpg" alt="pizza" class="d-block w-100">   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- قسم المنتجات -->
+        <div class="row products-carousel">
+            <div class="container">
+                <h4 class="text-center title">
+                المنتجات
+                </h4>
+                <p class="text-center title-underline">
+                    ----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------------
+                    <br> ------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------------
+                    <br> --------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--------
+                </p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/mar1.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا ليماسو     
+                                </h4>
+                                <div class="card-text">
+                                    بيتزا ليماسو  وهي بيتزا ايطالية تم صنعها خصيصا من بهارات خاصة و الفطر مع بعض الجبن  الايطالي والبندورة وكذلك الجرجير.
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/chicken1.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا الدجاج الشهية    
+                                </h4>
+                                <div class="card-text">
+                                بيتزا الدجاج الشهية والمكونة من دجاج مشوي مع الفلفل الخضر والاحمر والبصل.
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/veg2.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا الخضار    
+                                </h4>
+                                <div class="card-text">
+                                      تحتوي على مشروم , فلفل اخضر , طماطم طازجة , بصل , وزيتون اسود مع صلصة الطماطم و جبنة الموزاريلا الذائبة.
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/mar2.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا مارجريتا   
+                                </h4>
+                                <div class="card-text">
+                                    تحتوي على صلصة بندورة بسيطة منكَّهة بالأعشاب ومغطّاة بالجبنة 
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="second-row" style="display: none;">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/chicken3.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزاهوت ستاف الحاره (لحم)   
+                                </h4>
+                                <div class="card-text">
+                                    متعة الأكولات الحارة مع قطع لحم البفر الشهي او الدجاج والبصل المقطع والطماطم والفلفل الاخضر الحار
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/mar1.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا ليماسو     
+                                </h4>
+                                <div class="card-text">
+                                    بيتزا ليماسو  وهي بيتزا ايطالية تم صنعها خصيصا من بهارات خاصة و الفطر مع بعض الجبن  الايطالي والبندورة وكذلك الجرجير.
+                                
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/mar1.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا ليماسو     
+                                </h4>
+                                <div class="card-text">
+                                    بيتزا ليماسو  وهي بيتزا ايطالية تم صنعها خصيصا من بهارات خاصة و الفطر مع بعض الجبن  الايطالي والبندورة وكذلك الجرجير.
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card product-card">
+                            <img src="./image/mar1.jpg" alt="margert-pizza">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    بيتزا هينتون ليندا     
+                                </h4>
+                                <div class="card-text">
+                                    بيتزا هينتون ليندا وهي بيتزا فرنسية تم صنعها خصيصا من مكونات نادرة وغنية   بالدسم مع   بعض الجبن الفرنسي والكرز المهروس وكذلك الجرجير.
+                                </div>
+                                <a href="product.html" class="btn btn-outline-danger" role="button">
+                                    اطلع على المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 seeMore-btn">
+                        <button class="myBtn seeMore">
+                            عرض الكل
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- قسم العروض المميزة -->
+        <div class="row special-offers">
+            <div class="container">
+                <h4 class="text-center title">
+                    عروض مميزة
+                </h4>
+                <p class="text-center title-underline">
+                    ----------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----------------
+                    <br> ------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------------
+                    <br> --------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--------
+                </p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card offer-card">
+                            <img src="./image/offer4.jpg" alt="special-offer">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    عرض البيتزا السوبر  
+                                </h4>
+                                <div class="card-text text-center">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <p class="price">15 J.D</p>
+                                    <button class="btn add-to-cart-btn">
+                                        <div class="clear-fix">
+                                            <p class="float-right">اضافة للعربة</p>
+                                            <div class="float-left cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card offer-card mid-card">
+                            <img src="./image/offer2.jpg" alt="special-offer">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    عرض وجبة شخص واحد 
+                                </h4>
+                                <div class="card-text text-center">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <p class="price">3 J.D</p>
+                                    <button class="btn add-to-cart-btn">
+                                        <div class="clear-fix">
+                                            <p class="float-right">اضافة للعربة</p>
+                                            <div class="float-left cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card offer-card">
+                            <img src="./image/offer3.jpg" alt="special-offer">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    عرض وجبة شخصين 
+                                </h4>
+                                <div class="card-text text-center">
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                        <i class="fas fa-star active"></i>
+                                    </div>
+                                    <p class="price">7 J.D</p>
+                                    <button class="btn add-to-cart-btn">
+                                        <div class="clear-fix">
+                                            <p class="float-right">اضافة للعربة</p>
+                                            <div class="float-left cart">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- تذييل الصفحة -->
+        <div id="footer" class="row">
+            <div class="col-md-3  text-center footer" id="restaurant-logo">
+                <a href="index.html" class="footer-logo">
+                    <img src="./image/logo.png" alt="شعار الموقع">
+                    <br>
+                    ماي بيتزا
+                </a>
+            </div>
+            <div class="col-md-3  text-center footer" id="about-us">
+                <h3>عن المطعم</h3>
+                <p>مطعم تم تأسيسة عام2020م، وهو مطعم متخصص بتقديم جميع انواع البيتزا لتناسب كافة الاذواق.
+                    <br>
+                    الفرع الرئيسي: الاردن-عمان-شارع الجاردنز
+                </p>
+                <a href="about-us.html">
+                    <button type="button" >
+                        قراءة المزيد
+                    </button>
+                </a>
+            </div>
+            <div class="col-md-3 text-center footer" id="footer-social">
+                <h3>تابعنا على</h3>
+                <ul dir="ltr">
+                    <li>
+                        <a href="https://www.facebook.com" id="facebook" class="social-link">
+                            <i class="fab fa-facebook-square fa-lg mr-3"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com"  id="twitter" class="social-link">
+                            <i class="fab fa-twitter-square fa-lg mr-3"></i>
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com" id="google" class="social-link">
+                            <i class="fab fa-google-plus-g fa-lg mr-3"></i>
+                            Google
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" id="instagram" class="social-link">
+                            <i class="fab fa-instagram fa-lg mr-3"></i>
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3  text-center footer" id="footer-links">
+               <h3>روابط مهمه</h3>
+                <a href="index.html">
+                    الرئيسية
+                </a>
+                <a href="">
+                    سياسة الخصوصية
+                </a>
+                <a href="">
+                    العروض
+                </a>
+                <a href="">
+                    انضم لنا
+                </a>
+            </div>
+            <div class="col-12 text-center" id="copyright"> 
+                جميع الحقوق  محفوظه لمطعم <span>ماي بيتزا</span> 
+                &copy;<span id="copyright-year">2020</span>  
+            </div>
+        </div>
+    </div>
+    
+    
+   
+    
+</body>
+</html>
