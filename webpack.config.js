@@ -82,12 +82,17 @@ module.exports = {
                     exposes:['$', 'jQuery'],
                 },
             },
+            
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template:'./src/index.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'about-us.html',
+            template:'./src/about-us.html',
         }),
         new MiniCssExtractPlugin({ filename: 'css/style.css'}),
         new OptimizeCssAssetsWebpackPlugin({}),

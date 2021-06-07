@@ -319,6 +319,83 @@ button.add-to-cart-btn p{
 #copyright span:not(#copyright-year){
     color: #f06e69;
 }
+/* =========================================================
+============================================================
+about-us
+=========================================================
+============================================================*/
+.sub-nav{
+    margin-top: 100px;
+    background-color: #cccaca;
+    padding: 60px 30px 20px;
+    border-bottom: 1px solid #cccaca;
+}
+.custom-breadcrumb{
+    background-color: transparent !important;
+    padding: 25px 0;
+}
+.custom-breadcrumb li{
+    font-size: 19px;
+    font-weight: 400;
+    padding-right: 9px;
+}
+.custom-breadcrumb a{
+    text-decoration: none;
+    color: #fff;
+}
+.custom-breadcrumb a:hover{
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+}
+.custom-breadcrumb>li+li::before{
+    content: '>';
+    color: #fff;
+    padding: 0 5px;
+}
+.custom-breadcrumb .active{
+    color: #d9625c;
+}
+.about-restaurant{
+    background-color: #cccaca;
+    padding: 20px 30px 40px;
+    border-top: 1px solid #cccaca;
+}
+.about-restaurant h4{
+    font-size: 45px;
+    color: #232b38;
+    margin-bottom: 8px;
+}
+.about-restaurant .title-underline{
+    font-size: 29px;
+    line-height: 12px;
+    margin-bottom: 70px;
+    color: #eebf00;
+}
+.about-restaurant .text{
+    position: relative;
+    font-size: 18px;
+    
+    
+}
+.about-restaurant div + div{
+    margin-bottom: 60px;
+}
+.about-restaurant  p.left {
+    text-align: left;
+}
+.about-restaurant .text p{
+    color: rgba(48, 37, 37, 0.993);
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    padding: 10px 0px;
+}
+/* =========================================================
+============================================================
+media
+=========================================================
+============================================================*/
 /*التجاوب مع مختلف الشاشات*/
 @media (max-width: 1189px) {
     .custom-nav .navbar-nav li a.nav-link {
@@ -350,6 +427,9 @@ button.add-to-cart-btn p{
     .special-offers .card-title{
         font-size: 24px;
     }
+    .sub-nav{
+        padding: 36px 30px 20px;
+    }
 }
 @media (max-width: 768px) {
     .custom-nav a.navbar-brand{
@@ -366,6 +446,23 @@ button.add-to-cart-btn p{
     }
     .special-offers .mid-card{
         margin-top: 30px;
+    }
+    .custom-breadcrumb li{
+        font-size: 16px;
+    }
+    .about-restaurant h4{
+        font-size: 30px;
+    }
+    .about-restaurant .title-underline{
+        font-size: 18px;
+    }
+    .about-restaurant .text p , p.left{
+        top: auto;
+        transform: translateY(0);
+        text-align: center;
+    }
+    .about-restaurant .img{
+        margin-top: 150px;
     }
     #footer div.footer{
         margin-top: 50px !important;
@@ -386,5 +483,12 @@ button.add-to-cart-btn p{
         margin-bottom: 20px;
         margin-left: 30px;
         font-size: 30px;
+    }
+    .sub-nav{
+        margin-top: 42px;
+    }
+    .about-restaurant .img {
+        margin-top: 239px;
+        margin-bottom: 0px;
     }
 }
