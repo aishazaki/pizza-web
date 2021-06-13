@@ -88,7 +88,7 @@ body {
 }
 /* قسم صور البيتزا  */
 
-#carousel-best-selling .carousel-item:after{
+.carousel-item:after{
     content: "";
     display: block;
     position: absolute;
@@ -106,9 +106,11 @@ body {
 }
 #carousel-best-selling .carousel-indicators .fa-pizza-slice:hover, #carousel-best-selling .carousel-indicators .fa-pizza-slice:focus{
     color: #cfcbd7;
+    cursor: pointer;
 }
 #carousel-best-selling .carousel-indicators .active{
     color: #ff736c;
+    cursor: pointer;
 }
 /* قسم المنتجات */
 .products-carousel{
@@ -182,11 +184,11 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.special-offers h4.title{
+.special-offers h4.title, .reviews h4.title{
     color: #232b38;
     font-size: 45px;
 }
-.special-offers p.title-underline{
+.special-offers p.title-underline, .reviews p.title-underline{
     font-size: 20px;
     color: #eebf00;
     line-height: 10px;
@@ -324,8 +326,10 @@ button.add-to-cart-btn p{
 about-us
 =========================================================
 ============================================================*/
-.sub-nav{
+.nav-row{
     margin-top: 100px;
+}
+.sub-nav{
     background-color: #cccaca;
     padding: 60px 30px 20px;
     border-bottom: 1px solid #cccaca;
@@ -393,6 +397,234 @@ about-us
 }
 /* =========================================================
 ============================================================
+product page
+=========================================================
+============================================================*/
+.product-page .custom-breadcrumb a, .product-page .custom-breadcrumb li{
+    text-decoration: none;
+    color: #212529;
+    font-weight: normal;
+}
+.product-info{
+    padding: 40px 40px 80px;
+}
+.product-info h4{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.product-info p{
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+.product-info .clearfix{
+    padding-top: 15px;
+}
+#carousel-product .carousel-indicators .fa-pizza-slice{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+#carousel-product .carousel-indicators .fa-pizza-slice:hover, #carousel-product .carousel-indicators .fa-pizza-slice:focus{
+    color: #cfcbd7;
+}
+#carousel-product .carousel-indicators .active{
+    color: #ff736c;
+}
+#carousel-product .carousel-inner img{
+    height: 310px;
+}
+.add-product-to-cart{
+    background-color: #a09d9d;
+    padding: 60px 150px 30px;
+    color:#fff;
+    font-size: 22px;
+    display:flex;
+    justify-content: center;
+}
+.product-option {
+    display: inline-block;
+    height: 46px;
+    width: 46px;
+    border: 1px solid darkgreen;
+    margin: 8px;
+    background: #7a947a;
+    color: darkgreen;
+    line-height: 46px;
+    font-size: 20px;
+}
+.product-option:hover, .product-option:focus, .product-option:active{
+    background-color: darkgreen;
+    color: #fff;
+}
+.product-option.active{
+    background-color: #ac7b7b;
+    border-color: #bb504b;
+    color: #bb504b;
+}
+.product-option label input{
+    display: none;
+}
+.number select.form-control{
+    margin-top: 8px ;
+    text-align: center;
+    display: block;
+}
+.total-price{
+    margin: 80px 0 ;
+}
+.total-price .total-price-for-product{
+    direction: ltr;
+    font-size: 22px;
+}
+.add-product-to-cart div  span{
+    margin-right: 15px;
+}
+#restaurant-branch{
+    height: 48px;
+    line-height: 48px;
+}
+input[name="customer_address"]{
+    height: 70px;
+}
+/* التقييمات */
+.reviews .rating-card {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.rating-box {
+    width: 130px;
+    height: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FBC02D;
+    color: #fff
+}
+
+.rating-label {
+    font-weight: bold
+}
+
+.rating-bar {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px
+}
+
+.bar-5 {
+    width: 70%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-4 {
+    width: 30%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-3 {
+    width: 20%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-2 {
+    width: 10%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-1 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+td {
+    padding-bottom: 10px
+}
+
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.star-active:hover {
+    color: #F9A825;
+    cursor: pointer
+}
+
+.star-inactive {
+    color: #CFD8DC;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+/*المراجعه والتعليق*/
+.rate {
+    float: right;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.comments .card{
+    margin-top: 15px;
+}
+
+/* =========================================================
+============================================================
 media
 =========================================================
 ============================================================*/
@@ -430,8 +662,14 @@ media
     .sub-nav{
         padding: 36px 30px 20px;
     }
+    .product-option {
+        margin: 10px 15px;
+    }
+    .reviews .rating-card{
+        padding: 30px 15px;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .custom-nav a.navbar-brand{
         margin-right: 60px;
     }
@@ -464,6 +702,20 @@ media
     .about-restaurant .img{
         margin-top: 150px;
     }
+    .product-info h4{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .product-info p{
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .product-info .clearfix{
+        padding-top: 30px;
+    }
+    .number .label{
+        margin-top: 30px;
+    }
     #footer div.footer{
         margin-top: 50px !important;
     }
@@ -484,11 +736,20 @@ media
         margin-left: 30px;
         font-size: 30px;
     }
-    .sub-nav{
+    .nav-row{
         margin-top: 42px;
     }
     .about-restaurant .img {
         margin-top: 239px;
         margin-bottom: 0px;
+    }
+    .add-product-to-cart{
+        padding: 60px 80px 30px ;
+    }
+    .reviews .rating-card{
+        padding: 30px 0px;
+    }
+    .reviews h4.title{
+        font-size: 30px;
     }
 }

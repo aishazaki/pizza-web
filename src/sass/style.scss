@@ -1,0 +1,23 @@
+@import "_mixin.scss";
+
+
+
+
+button.mybtn {
+    padding: 15px 17px 11px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    border-radius: 15px;
+    border: transparent;
+    bottom: 0;
+    cursor: pointer;
+    box-shadow: none;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+    }
+}

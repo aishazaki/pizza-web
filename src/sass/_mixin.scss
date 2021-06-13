@@ -1,0 +1,36 @@
+$pro_colors: ("veg" #ccff66 #558000 #446600 #CCFFB4), ("chicken" #fdc1a9 #f94b06 #952d04 #f3c6b4), ("mar" rgba(240, 134, 178, 0.884) #881143 #5b0b2c rgb(216 168 188 / 88%));
+
+@each $pro_color in  $pro_colors{
+    .product-info, .sub-nav{
+        &.#{nth($pro_color, 1)} {
+            background: #{nth($pro_color, 5)};
+            border: none;
+        } 
+    }
+    .custom-breadcrumb li.active{
+        &.#{nth($pro_color, 1)} {
+            color: #{nth($pro_color, 4)} !important;
+        }
+    }
+    .carousel-indicators .fa-pizza-slice.active {
+        &.#{nth($pro_color, 1)} {
+        color: #{nth($pro_color, 2)} !important;
+        }
+    }
+    button.mybtn{
+        &.#{nth($pro_color, 1)}{
+            background-color: #{nth($pro_color, 3)} !important;
+            border-bottom: 4px solid #{nth($pro_color, 4)} !important;
+        }
+    }
+    button.mybtn:hover, button.mybtn:focus, button.mybtn:active{
+        &.#{nth($pro_color, 1)}{
+            background-color: #{nth($pro_color, 4)} !important;
+        }
+    }
+    
+}
+
+
+
+

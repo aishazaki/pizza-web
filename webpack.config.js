@@ -5,7 +5,13 @@ var OptimizeCssAssetsWebpackPlugin = require('mini-css-extract-plugin')
 
 
 module.exports = {
-    
+    /*تم لحل مشكلة 
+    webpack < 5 used to include polyfills for node.js core modules by default.     
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+باضافة target: node*/
+  
+    target: 'node',
+
 
     entry: {
         app: "./src/index.js"
@@ -20,11 +26,21 @@ module.exports = {
 
     devServer: {
         contentBase: path.join(__dirname, "/dist"),
-        port: 1339,
+        port: 1337,
         writeToDisk: true,
         open: true,
     },
-    
+
+    /* لحل مشكلة 
+    webpack < 5 used to include polyfills for node.js core modules by default.     
+This is no longer the case. Verify if you need this module and configure a polyfill for it.*/
+    resolve:{
+        fallback:{
+            util: require.resolve("util/"),
+            "path": require.resolve("path-browserify"),
+        },
+    },
+
     module: {
         rules: [
             {
@@ -93,6 +109,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'about-us.html',
             template:'./src/about-us.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'product.html',
+            template:'./src/product.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'product-chickenPizza.html',
+            template:'./src/product-chickenPizza.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'product-margheritaPizza.html',
+            template:'./src/product-margheritaPizza.html',
         }),
         new MiniCssExtractPlugin({ filename: 'css/style.css'}),
         new OptimizeCssAssetsWebpackPlugin({}),
