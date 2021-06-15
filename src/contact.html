@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع لمطعم بيع بيتزا">
+    <title>مطعم بيتزا|اتصل بنا </title>
+    <script type="text/html" src="{require('./index.js')}"></script>
+</head>
+<body>
+    <div class="container-fluid product-page">
+        <!-- قائمة التنقل -->
+        <div class="row nav-row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg fixed-top custom-nav  nav-background">
+                    <div class="container-fluid">
+                        <a href="./index.html" class="navbar-brand">
+                            ماي بيتزا
+                            <img src="./image/logo.png" alt="شعار الموقع">
+                        </a>
+                        <a href="#" class="navbar-toggler  btn btn-icon d-none d-sm-block d-lg-none">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <button class="navbar-toggler btn btn-icon collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse-menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link">الرئيسية</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">قائمة الطعام</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a href="" class="dropdown-item">الاطباق الرئيسية</a>
+                                        <a href="" class="dropdown-item">الاطباق الجانبية</a>
+                                        <a href="" class="dropdown-item">المشروبات</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">التوصيل</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./about-us.html" class="nav-link">عن المطعم</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="./contact.html" class="nav-link">اتصل بنا</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="shopping-cart d-block d-sm-none d-lg-block nav-link btn btn-icon ">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+        </div>
+         <!-- قائمة فرعية -->
+         <div class="row sub-nav  contact">
+            <ol class="breadcrumb custom-breadcrumb col-12">
+                <li>
+                    <a href="./index.html">الصفحة الرئيسية</a>
+                </li>
+                <li class="active veg">
+                اتصل بنا
+                </li>
+            </ol>
+        </div>
+
+        <!-- خريطة موقع المطعم -->
+        <div class="row map">
+            <div class="col-12 order-first text-center Title">
+                <h4 class="text-center title">
+                    معلومات الاتصال
+                </h4>
+                <p>مرحبا بك في موقعنا. </p>
+            </div>
+
+            <div class="col-12 col-md-6 mx-auto order-last">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13535.214775387023!2d35.87047253258132!3d31.99333663083613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca1c8a7b11e1f%3A0x4c649957c98962b3!2z2LQuINmI2LXZgdmKINin2YTYqtmE2Iwg2LnZhdmR2KfZhg!5e0!3m2!1sar!2sjo!4v1623597469880!5m2!1sar!2sjo" 
+                width="80%" height="360" style="border:0; margin-right: auto !important;
+                margin-left: auto !important;
+                display: flex;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-12 order-md-last col-md-6 pt-2 pt-md-4 align-self-center branch">
+                <h5>الفرع الرئيسي:</h5>
+                <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;عمان - شارع الجاردنز</p>
+                <h5>فرع العقبة:</h5>
+                <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;العقبة - شارع كذا كذا</p>
+                <h5>فرع اربد:</h5>
+                <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;اربد - شارع الجامعة</p>
+                <h6><i class="fas fa-envelope"></i>&nbsp;&nbsp; info@mail.com</h6>
+                <h6 class="mt-3"><i class="fas fa-phone"></i>&nbsp;&nbsp; +9620654444</h6>
+            </div>
+        </div>
+
+        <!-- اماكن توصيل الطلبات -->
+        <div class="row delivery py-5">
+            <div class="col-8 offset-2 text-center">
+                <h4 class="mb-4">اماكن توصيل الطلبات </h4>
+                <ul class="list-inline clearfix">
+                    <li class="list-inline-item float-right mb-3"><i class="fas fa-truck"></i>&nbsp;&nbsp;&nbsp;&nbsp; اربد</li>
+                    <li class="list-inline-item m mb-3"><i class="fas fa-truck"></i>&nbsp;&nbsp;&nbsp;&nbsp;عمان وضواحيها</li>
+                    <li class="list-inline-item float-left mb-3"><i class="fas fa-truck"></i>&nbsp;&nbsp;&nbsp;&nbsp;العقبة</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- اوقات العمل -->
+        <div class="row open-hours text-center justify-content-center">
+            <div id="darkBack"></div>
+
+            <div class="col-12 mx-auto">
+                <div class="mx-auto timediv">
+                    <div id="timeDiv"></div>
+                    <button type="button" class="btn btn-outline-secondary mr-2 mr-sm-4 background-white viewOpen" data-toggle="modal" data-target="#hoursModal">
+                        ساعات العمل &nbsp;&nbsp; <i class="fa fa-clock"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal text-center" role="dialog" id="hoursModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close btn btn-outline-danger" data-dismiss="modal">
+                                &times;
+                            </button>
+                            <h2 class="modal-title mx-auto">نرحب بكم في هذه الاوقات</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div id="day-6" class="dateTime">
+                                <div class="day">السبت</div>
+                                <div class="time">10صباحا- 12مساءاً</div>
+                            </div>
+                            <br>
+                            <div id="day-0" class="dateTime">
+                                <div class="day">الاحد</div>
+                                <div class="time">9صباحا- 11مساءاً</div>
+                            </div>
+                            <br>
+                            <div id="day-1" class="dateTime">
+                                <div class="day">الاثنين</div>
+                                <div class="time">9صباحا- 11مساءاً</div>
+                            </div>
+                            <br>
+                            <div id="day-2" class="dateTime">
+                                <div class="day">الثلاثاء</div>
+                                <div class="time">9صباحا- 11مساءاً</div>
+                            </div>
+                            <br>
+                            <div id="day-3" class="dateTime">
+                                <div class="day">الاربعاء</div>
+                                <div class="time">9صباحا- 11مساءاً</div>
+                            </div>
+                            <br>
+                            <div id="day-4" class="dateTime">
+                                <div class="day">الخميس</div>
+                                <div class="time">9صباحا- 11مساءاً</div>
+                            </div>
+                            <br>
+                            <div id="day-5" class="dateTime">
+                                <div class="day">الجمعة</div>
+                                <div class="time">مغلق</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- نموذج ارسال رسالة0 -->
+        <div class="row send-message justify-content-center">
+            <div class="col-9 col-sm-7 ">
+                <div class="header text-center">
+                    <h4>اتصل بنا</h4>
+                    <p>شاركونا استفساراتكم واقتراحاتكم</p>
+                </div>
+                <form id="contact-form" class="text-center">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="الاسم" required>
+                        </div>
+                      <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="البريد الالكتروني" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="message_title" name="message_title" placeholder="الموضوع"  required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" placeholder="رسالتك" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info mx-auto w-75"> ارسال &nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+           
+        </div>
+        <!-- تذييل الصفحة -->
+        <div id="footer" class="row">
+            <div class="col-md-3  text-center footer" id="restaurant-logo">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./image/logo.png" alt="شعار الموقع">
+                    <br>
+                    ماي بيتزا
+                </a>
+            </div>
+            <div class="col-md-3  text-center footer" id="about-us">
+                <h3>عن المطعم</h3>
+                <p>مطعم تم تأسيسة عام2020م، وهو مطعم متخصص بتقديم جميع انواع البيتزا لتناسب كافة الاذواق.
+                    <br>
+                    الفرع الرئيسي: الاردن-عمان-شارع الجاردنز
+                </p>
+                <a href="./about-us.html">
+                    <button type="button" >
+                        قراءة المزيد
+                    </button>
+                </a>
+            </div>
+            <div class="col-md-3 text-center footer" id="footer-social">
+                <h3>تابعنا على</h3>
+                <ul dir="ltr">
+                    <li>
+                        <a href="https://www.facebook.com" id="facebook" class="social-link">
+                            <i class="fab fa-facebook-square fa-lg mr-3"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com"  id="twitter" class="social-link">
+                            <i class="fab fa-twitter-square fa-lg mr-3"></i>
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com" id="google" class="social-link">
+                            <i class="fab fa-google-plus-g fa-lg mr-3"></i>
+                            Google
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" id="instagram" class="social-link">
+                            <i class="fab fa-instagram fa-lg mr-3"></i>
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3  text-center footer" id="footer-links">
+               <h3>روابط مهمه</h3>
+                <a href="./index.html">
+                    الرئيسية
+                </a>
+                <a href="">
+                    سياسة الخصوصية
+                </a>
+                <a href="">
+                    العروض
+                </a>
+                <a href="">
+                    انضم لنا
+                </a>
+            </div>
+            <div class="col-12 text-center" id="copyright"> 
+                جميع الحقوق  محفوظه لمطعم <span>ماي بيتزا</span> 
+                &copy;<span id="copyright-year">2020</span>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
